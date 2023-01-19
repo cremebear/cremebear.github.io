@@ -19,11 +19,12 @@
 
 
 h1{font-size: 20px;}
-h2, h3, h4{color:#7a7a7a;}
+h2, h3, h4{color:#baa16b;font-family: 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;}
 .hidden { padding:0 80px; }
-
+h4{padding-top:0px;font-size:1em;margin-top:0px;}
+h5{color:#e2ba5c; font-size:0.9em;}
 html,body { 
-    background-color: rgb(255, 252, 225);
+    background-color: rgb(255, 250, 205);
     margin-top:0px;
     width:100%;
     overflow-x:hidden;
@@ -35,13 +36,17 @@ html,body {
     text-align:center
 }
 main {
-    font-size:15px; color:rgb(158, 158, 158);
-    text-decoration-line: none;
+    color:rgb(154, 119, 93);
+    line-height: 1.2;
     margin: auto;
-    font-size: 1.5rem; line-height: 1.2;
-    font-family: 'BMJUA', 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;;
+    margin-top:0;
+    font-family: 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;;
 }
-
 img {
-    margin-bottom:40px;
+    margin-bottom:20px;
+}
+img-container {
+    margin-left:5px; 
+    margin-right:5px;
+    margin-bottom:0px;
 }
