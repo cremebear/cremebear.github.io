@@ -26,14 +26,17 @@ h5{color:#e2ba5c; font-size:0.9em;}
 html,body { 
     background-color: rgb(255, 250, 205);
     margin-top:0px;
+    margin-left:0px;
+    padding-left:0px;
     width:100%;
     overflow-x:hidden;
     overflow-y:auto;
 }
 .container {
+    left:0;
     width: 100%; 
     top:0;
-    text-align:center
+    text-align:center;
 }
 main {
     color:rgb(154, 119, 93);
@@ -43,10 +46,16 @@ main {
     font-family: 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;;
 }
 img {
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 img-container {
     margin-left:5px; 
     margin-right:5px;
     margin-bottom:0px;
+}
+
+@media screen and (max-width:767px){
+    .imgcon {width:100%; height:auto;}
+    h4 {font-size:.8em;}
+    h5{font-size:.7em;}
 }
