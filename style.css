@@ -1,0 +1,47 @@
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype');
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2');
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff');
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+ @font-face {
+    font-family: 'NanumSquareRound';
+    src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+
+h1{font-size: 20px;}
+h2, h3, h4{color:#7a7a7a;}
+.hidden { padding:0 80px; }
+
+html,body { 
+    background-color: rgb(255, 252, 225);
+    margin-top:0px;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.container {
+    width: 100%; 
+    top:0;
+    text-align:center
+}
+main {
+    font-size:15px; color:rgb(158, 158, 158);
+    text-decoration-line: none;
+    margin: auto;
+    font-size: 1.5rem; line-height: 1.2;
+    font-family: 'BMJUA', 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;;
+}
+
+img {
+    margin-bottom:40px;
+}
