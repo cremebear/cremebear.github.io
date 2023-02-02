@@ -12,10 +12,7 @@
 <script type="text/javascript" src="./turnjs4/lib/hash.js"></script>
 <link href="./css/magazine.css" rel="stylesheet">
 <script src="/js/magazine.js"></script>
-<audio id="audio01" src="./sound/01.mp3"></audio>
-<audio id="audio02" src="./sound/02.mp3"></audio>
-<audio id="audio03" src="./sound/03.mp3"></audio>
-<audio id="audio04" src="./sound/04.mp3"></audio>
+<audio id="audio01" src="./sound/pageturn.mp3"></audio>
 
 </head>
 <body>
@@ -68,10 +65,15 @@
 				<img src="./pages/11-thumb.jpg" width="56" height="80" class="page-11">
 				<span>10-11</span>
 			</li>
-			<li class="i">
+			<li class="d">
 				<img src="./pages/12-thumb.jpg" width="56" height="80" class="page-12">
 				<img src="./pages/13-thumb.jpg" width="56" height="80" class="page-13">
 				<span>12-13</span>
+			</li>
+			<li class="i">
+				<img src="./pages/14-thumb.jpg" width="56" height="80" class="page-14">
+				<img src="./pages/15-thumb.jpg" width="56" height="80" class="page-15">
+				<span>14-15</span>
 			</li>
 		
 		<ul>
@@ -87,9 +89,9 @@ function loadApp() {
 
  	var flipbook = $('.magazine');
 	var audio01 = document.getElementById("audio01");
-	var audio02 = document.getElementById("audio02");
-	var audio03 = document.getElementById("audio03");
-	var audio04 = document.getElementById("audio04");
+	// var audio02 = document.getElementById("audio02");
+	// var audio03 = document.getElementById("audio03");
+	// var audio04 = document.getElementById("audio04");
 
  	// Check if the CSS was already loaded
 	
@@ -132,7 +134,7 @@ function loadApp() {
 
 			// The number of pages
 
-			pages: 13,
+			pages: 15,
 
 			// Events
 
@@ -145,23 +147,24 @@ function loadApp() {
 					
 					audio01.pause();
 					audio01.currentTime=0;
-					audio02.pause();
-					audio02.currentTime=0;
-					audio03.pause();
-					audio03.currentTime=0;
-					audio04.pause();
-					audio04.currentTime=0;
+					// audio02.pause();
+					// audio02.currentTime=0;
+					// audio03.pause();
+					// audio03.currentTime=0;
+					// audio04.pause();
+					// audio04.currentTime=0;
 					
 
-					if (page==2 || page==3){
-						audio01.play();
-					}else if (page==4 || page==5) {
-						audio02.play();
-					}else if (page==6 || page==7) {
-						audio03.play();	
-					}else if (page==8 || page==9) {
-						audio04.play();
-					}
+					// if (page==2 || page==3){
+					// 	audio01.play();
+					// }else if (page==4 || page==5) {
+					// 	audio02.play();
+					// }else if (page==6 || page==7) {
+					// 	audio03.play();	
+					// }else if (page==8 || page==9) {
+					// 	audio04.play();
+					// }
+					audio01.play();
 
 					Hash.go('page/' + page).update();
 
