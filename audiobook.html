@@ -12,7 +12,6 @@
 <script type="text/javascript" src="./turnjs4/lib/hash.js"></script>
 <link href="./css/magazine.css" rel="stylesheet">
 <script src="/js/audiobook.js"></script>
-<!-- <audio id="audio00" src="./sound/00.mp3"></audio>-->
 <audio id="audio01" src="./sound/01.mp3"></audio>
 <audio id="audio02" src="./sound/02.mp3"></audio>
 <audio id="audio03" src="./sound/03.mp3"></audio>
@@ -92,11 +91,10 @@ function loadApp() {
  	$('#canvas').fadeIn(1000);
 
  	var flipbook = $('.magazine');
-	//var audio00 = document.getElementById("audio00"); //cover page
-	var audio01 = document.getElementById("audio01");
-	var audio02 = document.getElementById("audio02");
-	var audio03 = document.getElementById("audio03");
-	var audio04 = document.getElementById("audio04");
+	var audio01 = document.getElementById("audio01"); //2-3
+	var audio02 = document.getElementById("audio02"); //4-5
+	var audio03 = document.getElementById("audio03"); //6-7
+	var audio04 = document.getElementById("audio04"); //8-9
 
  	// Check if the CSS was already loaded
 	
@@ -150,6 +148,7 @@ function loadApp() {
 					currentPage = book.turn('page'),
 					pages = book.turn('pages');
 					
+					
 					audio01.pause();
 					audio01.currentTime=0;
 					audio02.pause();
@@ -158,10 +157,12 @@ function loadApp() {
 					audio03.currentTime=0;
 					audio04.pause();
 					audio04.currentTime=0;
-					
 
 					
-					if (page==2 || page==3){
+
+					if (page==1){
+						
+					}else if (page==2 || page==3){
 						audio01.play();
 					}else if (page==4 || page==5) {
 						audio02.play();
@@ -170,6 +171,7 @@ function loadApp() {
 					}else if (page==8 || page==9) {
 						audio04.play();
 					}
+					
 
 					Hash.go('page/' + page).update();
 
