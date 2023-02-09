@@ -16,6 +16,8 @@
 <audio id="audio02" src="./sound/02.mp3"></audio>
 <audio id="audio03" src="./sound/03.mp3"></audio>
 <audio id="audio04" src="./sound/04.mp3"></audio>
+<audio id="audio05" src="./sound/05.mp3"></audio>
+
 
 </head>
 <body>
@@ -95,6 +97,8 @@ function loadApp() {
 	var audio02 = document.getElementById("audio02"); //4-5
 	var audio03 = document.getElementById("audio03"); //6-7
 	var audio04 = document.getElementById("audio04"); //8-9
+	var audio05 = document.getElementById("audio05"); //10-11
+
 
  	// Check if the CSS was already loaded
 	
@@ -157,6 +161,8 @@ function loadApp() {
 					audio03.currentTime=0;
 					audio04.pause();
 					audio04.currentTime=0;
+					audio05.pause();
+					audio05.currentTime=0;
 
 					
 
@@ -170,6 +176,8 @@ function loadApp() {
 						audio03.play();	
 					}else if (page==8 || page==9) {
 						audio04.play();
+					}else if (page==10 || page==11){
+						audio05.play();
 					}
 					
 
