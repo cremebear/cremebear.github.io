@@ -17,7 +17,12 @@
 <audio id="audio03" src="./sound/03.mp3"></audio>
 <audio id="audio04" src="./sound/04.mp3"></audio>
 <audio id="audio05" src="./sound/05.mp3"></audio>
+<audio id="audio06" src="./sound/06.mp3"></audio>
+<audio id="audio07" src="./sound/07.mp3"></audio>
+<audio id="audio08" src="./sound/08.mp3"></audio>
 <audio id="audio09" src="./sound/09.mp3"></audio>
+<audio id="audio10" src="./sound/10.mp3"></audio>
+<audio id="audio11" src="./sound/11.mp3"></audio>
 
 
 </head>
@@ -122,7 +127,12 @@ function loadApp() {
 	var audio03 = document.getElementById("audio03"); //6-7
 	var audio04 = document.getElementById("audio04"); //8-9
 	var audio05 = document.getElementById("audio05"); //10-11
+	var audio06 = document.getElementById("audio06"); //12-13
+	var audio07 = document.getElementById("audio07"); //14-15
+	var audio08 = document.getElementById("audio08"); //16-17
 	var audio09 = document.getElementById("audio09"); //18-19
+	var audio10 = document.getElementById("audio10"); //20-21
+	var audio11 = document.getElementById("audio11"); //22-23
 
 
  	// Check if the CSS was already loaded
@@ -188,9 +198,18 @@ function loadApp() {
 					audio04.currentTime=0;
 					audio05.pause();
 					audio05.currentTime=0;
+					audio06.pause();
+					audio06.currentTime=0;
+					audio07.pause();
+					audio07.currentTime=0;
+					audio08.pause();
+					audio08.currentTime=0;
 					audio09.pause();
 					audio09.currentTime=0;
-
+					audio10.pause();
+					audio10.currentTime=0;
+					audio11.pause();
+					audio11.currentTime=0;
 					
 
 					if (page==1){
@@ -206,14 +225,19 @@ function loadApp() {
 					}else if (page==10 || page==11){
 						audio05.play();
 					}else if (page==12 || page==13){
-
+						audio06.play();
 					}else if (page==14 || page==15){
-
+						audio07.play();
 					}else if (page==16 || page==17){
-
+						audio08.play();
 					}else if (page==18 || page==19){
 						audio09.play();
+					}else if (page==20 || page==21){
+						audio10.play();
+					}else if (page==22 || page==23){
+						audio11.play();
 					}
+					
 
 					
 
