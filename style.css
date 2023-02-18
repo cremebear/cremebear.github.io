@@ -21,7 +21,7 @@
 h1{font-size: 20px;}
 h2, h3, h4{color:#baa16b;font-family: 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;}
 .hidden { padding:0 80px; }
-h4{padding-top:0px;font-size:1em;margin-top:0px;}
+h4{padding-top:0px;font-size:0.9em;margin-top:0px;}
 h5{color:#e2ba5c; font-size:0.9em;}
 html,body { 
     background-color: rgb(255, 250, 205);
