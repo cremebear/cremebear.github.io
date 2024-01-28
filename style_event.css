@@ -18,12 +18,12 @@
  }
 
 
-h1{color:#000000; font-size: 2em; ;}
+h1{color:#000000; font-size: 1.1em; ;}
 h2, h3, h4{color:#6f6651; font-size:1em;font-family: 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;}
 .hidden { padding:0 80px; }
-h4{padding-top:0px;font-size:1.4em;margin-top:0px;
+h4{padding-top:0px;font-size:1em;margin-top:0px;
     margin-bottom:0px;}
-h5{color:#e2ba5c; font-size:1em;}
+h5{color:#e2ba5c; font-size:.7em;}
 html,body { 
     background-color: rgb(255, 250, 205);
     margin-top:0px;
@@ -65,6 +65,6 @@ img-container {
 
 @media screen and (max-width:767px){
     .imgcon {width:100%; height:auto;}
-    h4 {font-size:1em;}
-    h5{font-size:1em;}
+    h4 {font-size:.8em;}
+    h5{font-size:.7em;}
 }
