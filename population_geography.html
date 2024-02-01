@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yearly Heatmap Slider</title>
+<style>
+  #sliderContainer {
+    width: 600px; /* Width of the slider container */
+    margin: 20px auto; /* Center the container */
+  }
+
+  #slider {
+    position: relative;
+    width: 100%; /* Slider width is the full width of the container */
+    margin: auto;
+  }
+
+  .slides {
+    display: none;
+    width: 100%;
+  }
+
+  #yearSlider {
+    width: 100%;
+  }
+
+  #sliderControls {
+    display: flex;
+    justify-content: center; /* Center slider controls horizontally */
+    align-items: center; /* Center slider controls vertically */
+    gap: 10px; /* Add some space between the slider and the label */
+  }
+</style>
+</head>
+<body>
+
+<div id="sliderContainer">
+  <div id="slider">
+    <!-- Image container will be filled with images by JavaScript -->
+  </div>
+
+  <!-- Slider controls -->
+  <div id="sliderControls">
+    <input type="range" min="1993" max="2021" value="1993" id="yearSlider" oninput="updateImage(this.value)">
+    <span id="yearLabel">1993</span>
+  </div>
+</div>
+
+<script>
+const imageFolder = 'maps'; // The folder where images are stored
+const imageSuffix = '.png'; // The file extension of the image files
+const slider = document.getElementById('slider');
+const yearSlider = document.getElementById('yearSlider');
+const yearLabel = document.getElementById('yearLabel');
+const startYear = parseInt(yearSlider.min);
+const endYear = parseInt(yearSlider.max);
+
+// Generate image tags inside the slider
+for (let year = startYear; year <= endYear; year++) {
+  let img = document.createElement('img');
+  img.src = `${imageFolder}/year_${year}${imageSuffix}`;
+  img.alt = `Year ${year}`;
+  img.classList.add('slides');
+  slider.appendChild(img);
+}
+
+// Function to update the displayed image based on the slider's value
+function updateImage(year) {
+  let slides = document.getElementsByClassName('slides');
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'; // Hide all images
+  }
+  
+  // Show the selected year's image
+  let imgToShow = document.querySelector(`img[alt="Year ${year}"]`);
+  if(imgToShow) {
+    imgToShow.style.display = 'block';
+  }
+  
+  // Update the label
+  yearLabel.textContent = year;
+}
+
+// Initialize the slider position and displayed image
+updateImage(yearSlider.value);
+
+yearSlider.addEventListener('input', function() {
+  updateImage(this.value);
+});
+</script>
+
+</body>
+</html>

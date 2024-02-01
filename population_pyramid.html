@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Population Pyramids Slider</title>
+<style>
+#slider {
+  width: 100%;
+  margin: 0 15px;
+}
+
+#slider-image {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>정선군의 연령별 인구 변화(1993-2021)</h1>
+
+  <img id="slider-image" src="" alt="Population Pyramid">
+  <div class="slidecontainer">
+    <input type="range" min="1" max="29" value="1" class="slider" id="slider">
+<p> &nbsp; &nbsp; &nbsp; &nbsp;<span id="year"></span>년 전 </p>
+  </div>
+</div>
+<script>
+window.onload = function() {
+  // Function to change the slider value and update the image accordingly
+  function showImage(idx) {
+    var image = document.getElementById("slider-image");
+    image.src = 'pyramids/P_year_' + String(idx).padStart(2, '0') + '.png';
+    slider.value = idx;
+    document.getElementById("year").innerHTML = - idx + 31;
+  }
+
+  var slider = document.getElementById("slider");
+  var output = document.getElementById("year");
+ <!--output.innerHTML = slider.value; // Display the default slider value-->
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+    showImage(this.value);
+  }
+
+  // Initialize the first image
+  showImage(1);
+}
+</script>
+
+</body>
+</html>
