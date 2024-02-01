@@ -109,11 +109,16 @@ iframe {
 @media screen and (max-width: 540px) {
 header{
     font-size: .6em;
-}
+} 
 .logo{padding-bottom:0px;}
 main img{width:100%;}
 .main-title{
     font-size:.8em;
+}
+.greetings.text {
+    font-size:0.6em;
+    line-height:1.6em;
+    padding:10px;
 }
 .hidden {display:block;}
 .title.first{
