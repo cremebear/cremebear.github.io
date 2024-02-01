@@ -31,7 +31,7 @@ footer {
     padding:5px;
     text-align:center;
     background-color: #677aa9;
-    color:rgb(66, 66, 66);
+    color:rgb(255, 255, 255);
     font-size:8px;
 }
 
@@ -116,7 +116,7 @@ main img{width:100%;}
     font-size:.8em;
 }
 .greetings.text {
-    font-size:0.6em;
+    font-size:0.8em;
     line-height:1.6em;
     padding:10px;
 }
