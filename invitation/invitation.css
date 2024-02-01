@@ -1,0 +1,136 @@
+/* @import url('https://cdn.jsdelivr.net/gh/snz-hayden/toolo/fonts/nixgon/nixgon.css'); */
+/* @import url('https://github.com/snz-hayden/toolo/tree/master/fonts/nixgon/file/NIXGONFONTS_Regular.woff'); */
+/* @font-face {
+    font-family: 'Nixgon';
+    src: url('https://cdn.jsdelivr.net/gh/snz-hayden/toolo/fonts/nixgon/nixgon.css');
+    font-weight: 400;
+    font-style: normal;
+} */
+body {
+    font-family: 'Nixgon', 'Malgun Gothic', sans-serif;
+    left:0;
+    top:0;
+    margin:0;
+    background-color: rgb(237, 251, 255);
+    line-height: 1.0em;
+    /* overflow-x:hidden; */
+    /* overflow-y:hidden; */
+}
+header {
+    padding:5px;
+    text-align:center;
+    color:rgb(239, 239, 239);
+    font-size:.7em;
+    background-color: #677aa9;
+}
+header a {
+    text-decoration:none;
+    color:rgb(66,66,66);
+}
+footer {
+    padding:5px;
+    text-align:center;
+    background-color: #677aa9;
+    color:rgb(66, 66, 66);
+    font-size:8px;
+}
+
+.logo {width:40px;margin:10px;}
+.jeongsun{
+    width:40px; padding:10px;
+}
+.jeongsun2{
+    width:65px; padding:10px;
+}
+main img {width:70%;}
+main{
+    padding:10px;
+    text-align:center;
+    line-height: 1.2em;
+    color:#74777a;
+    margin-bottom:10px;
+
+}
+.main-title{
+    padding:0px;
+    font-size:1em;
+    color:rgb(66,66,66);
+}
+.main-title img{
+    width:300px;
+}
+.title.first {
+    font-size:30px;
+    font-weight:700;
+    color:#252323;
+}
+.title.second {
+    padding-top:10px;
+}
+.main-schedule{
+    padding:10px;
+    font-size:0.9em;
+}
+.hidden {display:none;}
+button {
+    font-family:'Nixgon';
+    color:rgb(255, 233, 200);
+    background-color: #44409c;
+    width:100px;
+    margin:10px;
+    padding:10px;
+    border:0;
+    border-radius:30px;
+}
+.subtitle{
+    background-color: #677aa9;
+    color:#454647; 
+}
+.content {
+    line-height:1.5em;
+    font-size:.9em;
+}
+.line1{
+    border-bottom:1px solid #677aa9;
+}
+.greetings.text {
+    font-size:0.9em;
+    line-height:1.6em;
+    padding:10px;
+}
+.map{
+    padding:15px;
+}
+iframe {
+    width:600px;
+    height:450px;
+}
+.map-text{font-size:14px;padding-top:10px;}
+@media screen and (max-width: 540px) {
+header{
+    font-size: .6em;
+}
+.logo{padding-bottom:0px;}
+main img{width:100%;}
+.main-title{
+    font-size:.8em;
+}
+.hidden {display:block;}
+.title.first{
+    font-size:1.7em;
+    line-height: 1.5em;
+}
+.main-schedule{font-size:0.7em;}
+.title.second{font-size:1em;}
+.button{
+    font-size:0.8em;
+    padding:5px;
+    width:81px;
+    margin:6px;
+}
+iframe{
+    width:100%;
+    height:300px;
+}
+.map-text{font-size:12px;}
+}
