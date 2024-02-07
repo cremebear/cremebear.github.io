@@ -42,6 +42,10 @@ footer {
 .jeongsun2{
     width:65px; padding:10px;
 }
+.jeongsun3{
+
+    width:75px; padding:10px;
+}
 main img {width:70%;}
 main{
     padding:10px;
@@ -116,7 +120,7 @@ main img{width:100%;}
     font-size:.8em;
 }
 .greetings.text {
-    font-size:0.8em;
+    font-size:13px;
     line-height:1.6em;
     padding:10px;
 }
@@ -125,7 +129,7 @@ main img{width:100%;}
     font-size:1.7em;
     line-height: 1.5em;
 }
-.main-schedule{font-size:0.7em;}
+.main-schedule{font-size:13px;}
 .title.second{font-size:1em;}
 .button{
     font-size:0.8em;
