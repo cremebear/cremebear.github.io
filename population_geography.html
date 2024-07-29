@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Yearly Heatmap Slider</title>
+<title>읍면별 인구 변화 : 정선군</title>
 <style>
+        h1, h2, h3 {
+            margin: 0; /* 모든 헤딩의 기본 마진 제거 */
+        }
+        h1 {
+            margin-bottom: 10px; /* 제목과 부제목 사이의 간격 설정 */
+        }
+        h2 {
+            margin-bottom: 5px; /* 부제목과 추가 설명 사이의 간격 설정 */
+        }
+
   #sliderContainer {
     width: 600px; /* Width of the slider container */
     margin: 20px auto; /* Center the container */
@@ -26,25 +36,44 @@
 
   #sliderControls {
     display: flex;
-    justify-content: center; /* Center slider controls horizontally */
+    flex-direction: column;
     align-items: center; /* Center slider controls vertically */
     gap: 10px; /* Add some space between the slider and the label */
+    margin-top: 20px; /* Add margin above the slider controls */
+    width: 600px; /* Set the same width as the slider container */
+    margin: auto; /* Center the slider controls */
   }
+  
+  #yearLabel {
+    margin-top: 10px; /* Add some space above the year label */
+    font-size: 18px; /* Larger font size */
+  }
+  
+  #yearLabel .korean {
+    font-weight: bold; /* Bold text for Korean */
+  }
+
 </style>
 </head>
 <body>
+    <div class="container" align="center">
+        <h1>읍면별 인구 변화 : 정선군</h1>
+        <h1>Population change by district : Jeongseon county</h1>
+        <h2>&nbsp;&nbsp;&nbsp;(1993-2044)</h2>
+        <div class="slidecontainer">
+            <div id="sliderContainer">
+                <div id="slider">
+                    <!-- Image container will be filled with images by JavaScript -->
+                </div>
+            </div>
 
-<div id="sliderContainer">
-  <div id="slider">
-    <!-- Image container will be filled with images by JavaScript -->
-  </div>
-
-  <!-- Slider controls -->
-  <div id="sliderControls">
-    <input type="range" min="1993" max="2021" value="1993" id="yearSlider" oninput="updateImage(this.value)">
-    <span id="yearLabel">1993</span>
-  </div>
-</div>
+            <!-- Slider controls -->
+            <div id="sliderControls">
+                <input type="range" min="1993" max="2044" value="2024" id="yearSlider" oninput="updateImage(this.value)">
+                <span id="yearLabel">현재(present)</span>
+            </div>
+        </div>
+    </div>
 
 <script>
 const imageFolder = 'maps'; // The folder where images are stored
@@ -54,6 +83,7 @@ const yearSlider = document.getElementById('yearSlider');
 const yearLabel = document.getElementById('yearLabel');
 const startYear = parseInt(yearSlider.min);
 const endYear = parseInt(yearSlider.max);
+const baseYear = 2024; // 기준 연도
 
 // Generate image tags inside the slider
 for (let year = startYear; year <= endYear; year++) {
@@ -78,7 +108,13 @@ function updateImage(year) {
   }
   
   // Update the label
-  yearLabel.textContent = year;
+  if (year < baseYear) {
+    yearLabel.innerHTML = `<span class="korean">${baseYear - year}년 전</span><br>(${baseYear - year} years ago)`;
+  } else if (year > baseYear) {
+    yearLabel.innerHTML = `<span class="korean">${year - baseYear}년 후 예측</span><br>(${year - baseYear} years later forecast)`;
+  } else {
+    yearLabel.innerHTML = `<span class="korean">${baseYear}년 현재</span><br>(present)`;
+  }
 }
 
 // Initialize the slider position and displayed image
