@@ -7,7 +7,7 @@
 <script type="text/javascript" src="./turnjs4/extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="./turnjs4/lib/hash.js"></script>
 <link href="./css/magazine.css" rel="stylesheet">
-<script src="/js/magazine.js"></script>
+<script src="/js/dawonbook.js"></script>
 <audio id="audio01" src="./sound/pageturn.mp3"></audio>
 
 </head>
@@ -65,11 +65,6 @@
 				<img src="./dawonPages/12-thumb.jpg" width="56" height="80" class="page-12">
 				<img src="./dawonPages/13-thumb.jpg" width="56" height="80" class="page-13">
 				<span>12-13</span>
-			</li>
-			<li class="i">
-				<img src="./dawonPages/14-thumb.jpg" width="56" height="80" class="page-14">
-				<img src="./dawonPages/15-thumb.jpg" width="56" height="80" class="page-15">
-				<span>14-15</span>
 			</li>
 		
 		<ul>
@@ -130,7 +125,7 @@ function loadApp() {
 
 			// The number of pages
 
-			pages: 15,
+			pages: 13,
 
 			// Events
 
@@ -488,7 +483,7 @@ yepnope({
 	test : Modernizr.csstransforms,
 	yep: ['./turnjs4/lib/turn.js'],
 	nope: ['./turnjs4/lib/turn.html4.min.js'],
-	both: ['./turnjs4/lib/zoom.min.js', './js/magazine.js', './css/magazine.css'],
+	both: ['./turnjs4/lib/zoom.min.js', './js/dawonbook.js', './css/magazine.css'],
 	complete: loadApp
 });
 
