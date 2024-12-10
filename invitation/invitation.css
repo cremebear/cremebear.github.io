@@ -29,13 +29,13 @@ header a {
 }
 footer {
     padding:5px;
-   
+   width:100%;
     position:absolute;
     bottom : 0;
     text-align:center;
     background-color: #677aa9;
     color:rgb(255, 255, 255);
-    font-size:.9em;
+    font-size:.7em;
 }
 
 .logo {width:40px;margin:10px;}
