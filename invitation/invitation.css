@@ -29,12 +29,12 @@ header a {
 }
 footer {
     padding:5px;
-    position : fixed;
+   
     bottom : 0;
     text-align:center;
     background-color: #677aa9;
     color:rgb(255, 255, 255);
-    font-size:8px;
+    font-size:10px;
 }
 
 .logo {width:40px;margin:10px;}
