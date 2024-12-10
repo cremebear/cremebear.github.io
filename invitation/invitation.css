@@ -29,7 +29,7 @@ header a {
 }
 footer {
     padding:5px;
-   width:100%;
+    width:100%;
     bottom : 0;
     text-align:center;
     background-color: #677aa9;
@@ -38,15 +38,7 @@ footer {
 }
 
 .logo {width:40px;margin:10px;}
-.jeongsun{
-    width:40px; padding:10px;
-}
-.jeongsun2{
-    width:65px; padding:10px;
-}
-.jeongsun3{
-    width:100px; padding:10px;
-}
+
 main img {width:70%;}
 main{
     padding:10px;
