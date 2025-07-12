@@ -1,57 +1,201 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>CREMEBEAR</title>
-        <link href="./style.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트 만드는 중!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="main">
-            <img class="imgcon" src="./bear.jpg" width="400px" height="400px">
-            <div class="img-container">
-                
-                <a href="https://instagram.com/creme_bear" target="blank"><img src="./insta.png" alt="insta"></a>
-                &nbsp;
-                <a href="https://cremebear.com" target="blank"><img src="./shopping.png" alt="shopping"></a>
-                &nbsp;
-                <a href="https://brunch.co.kr/magazine/50proverbs" target="blank"><img src="./brunch.png" alt="french proverbs"></a>
-                &nbsp;
-                <a href="http://bowwow.kim" target="blank"><img src="./blog.png" alt="blog"></a>
-                &nbsp;
-                <a href="https://youtube.com/@bowwowkim" target="blank"><img src="./youtube.png" alt="videos"></a>
-        
-        
+<body class="overflow-x-hidden">
+
+   <!-- Barre de navigation fixe -->
+    <nav class="fixed top-0 right-0 z-50 p-4 bg-white bg-opacity-90 shadow-lg rounded-bl-lg md:rounded-bl-xl">
+        <div class="flex items-center justify-end">
+            <!-- Bouton Hamburger visible sur toutes les tailles d'écran -->
+            <button id="hamburgerButton" class="hamburger-icon focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Liens de navigation - masqués par défaut, affichés via JS -->
+            <div id="navMenu" class="hidden flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 absolute top-full right-0 bg-white bg-opacity-90 shadow-lg rounded-bl-lg md:relative md:shadow-none md:bg-transparent">
+                <a href="#section1" class="nav-link text-blue-600 hover:text-blue-800 font-semibold px-3 py-2 rounded-md transition-colors duration-300">CREME BEAR</a>
+                <a href="#section2" class="nav-link text-blue-600 hover:text-blue-800 font-semibold px-3 py-2 rounded-md transition-colors duration-300">Section 2</a>
+                <a href="#section3" class="nav-link text-blue-600 hover:text-blue-800 font-semibold px-3 py-2 rounded-md transition-colors duration-300">Section 3</a>
+                <a href="#section4" class="nav-link text-blue-600 hover:text-blue-800 font-semibold px-3 py-2 rounded-md transition-colors duration-300">Section 4</a>
+                <a href="#section5" class="nav-link text-blue-600 hover:text-blue-800 font-semibold px-3 py-2 rounded-md transition-colors duration-300">Section 5</a>
+            </div>
         </div>
-        <h4><p><b>크렘베어</b>는 프랑스에서 온 크림 재질의 우아한 곰으로,
-        <p>강원도 산 속 동물 친구들과 함께 커피 마시기를 즐깁니다.
-        <p>FSC 종이, 재생지, 콩기름 잉크 등 친환경 소재 일러스트 제품을 만들며
-        <p>사람들에게 행복을 전달하고자 합니다.</h4>
-        <p></p>
-        <h5><p>Cremebear is an elegant creamy bear.
-        <p>They enjoy drinking coffee with animal friends in the mountains of Gangwon Province.
-        <p>We create illustration products made of eco-friendly materials</p>
-        <p>such as FSC-certified paper, recycled paper and soy ink.</p>
-        <p>We'd like to deliver happiness to people.</p></h5>
-        <p></p>
-        <p><h5>.</p>
-        <p>.</p>
-        </h5>
-        <p> </p>
-         <h4><p>2022년 K-핸드메이드페어 
-            
-            <p><img class="imgcon" src="./1.jpeg" /> </p>
-            <p><img class="imgcon" src="./4.jpeg" /> </p>
-            <!-- <p><img class="imgcon" src="./3.jpeg" /> </p> -->
-            <p><img class="imgcon" src="./2.jpeg" /> </p>
-        </h4>
-        <p><h5>2022-2024 Cremebear && Creme Fleurette all rights reserved.</h5></p>
-        <p> </p>
+    </nav>
+
+    <!-- Section 1 -->
+    <section id="section1" class="scroll-offset">
+        <div class="max-w-4xl mx-auto p-6 relative ">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">CREME BEAR</h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p>크렘베어는 크림 재질의 우아한 곰입니다. 프랑스 피레네 산맥에서 살다 강원도 산악지대로 이사를 왔답니다!</p> 
+                <p>Cremebear is an elegant creamy bear. They once lived in the Pyrenées but moved to the mountainous area in Gangwon Province. They enjoy drinking coffee with their animal friends.</p>
+                <div id="img-div"><a href="https://instagram.com/creme_bear" target="blank"><img src="./insta.png" alt="insta"></a> &nbsp;&nbsp;
+                <a href="https://smartstore.naver.com/coffeebear" target="blank"><img src="./shopping.png" alt="shopping"></a>
+                </div>
+           
+            </p>
+            <!-- Image animée mise à jour avec gom_for_website.png et centrée horizontalement -->
+            <img src="./gom_for_website.png" alt="Animated Image" class="animated-image mt-8 mx-auto">
         </div>
-    </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="scroll-offset">
+        <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">Explore Section Two</h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Dive deeper into the details in this second section. We've ensured that all content adapts beautifully to any screen size.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="scroll-offset">
+        <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">Discover Section Three</h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Here, you'll find more engaging information. The navigation on the top-right allows for quick jumps between sections.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4" class="scroll-offset">
+        <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">Uncover Section Four</h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Almost there! This section continues to demonstrate the responsiveness and ease of navigation of this design.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5" class="scroll-offset">
+        <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">Conclude with Section Five</h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Thank you for exploring our responsive one-page website. Feel free to navigate back up using the triggers!
+            </p>
+        </div>
+    </section>
+
+     <script>
+        // Obtenez tous les liens de navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const hamburgerButton = document.getElementById('hamburgerButton');
+        const navMenu = document.getElementById('navMenu');
+
+        // Ajout d'un écouteur d'événements de clic à chaque lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Empêcher le comportement d'ancrage par défaut (saut instantané)
+                e.preventDefault();
+
+                // Obtenez l'ID de la section cible à partir de l'attribut href
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                // Vérifiez si la section cible existe
+                if (targetSection) {
+                    // Faites défiler la section cible en douceur
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Fermez le menu hamburger après le clic sur un lien
+                    navMenu.classList.add('hidden');
+                    hamburgerButton.classList.remove('open');
+                    hamburgerButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Gérer le clic sur le bouton hamburger
+        hamburgerButton.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+            hamburgerButton.classList.toggle('open');
+            const isExpanded = navMenu.classList.contains('hidden') ? 'false' : 'true';
+            hamburgerButton.setAttribute('aria-expanded', isExpanded);
+        });
+    </script>
+
+    <!--<script>
+        // Obtenez tous les liens de navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const hamburgerButton = document.getElementById('hamburgerButton');
+        const navMenu = document.getElementById('navMenu');
+
+        // Ajout d'un écouteur d'événements de clic à chaque lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Empêcher le comportement d'ancrage par défaut (saut instantané)
+                e.preventDefault();
+
+                // Obtenez l'ID de la section cible à partir de l'attribut href
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                // Vérifiez si la section cible existe
+                if (targetSection < 768) {
+                    // Faites défiler la section cible en douceur
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Fermez le menu hamburger après le clic sur un lien (pour les mobiles)
+                    if (window.innerWidth <768) { // 768px est la taille md de Tailwind
+                        navMenu.classList.add('hidden');
+                        hamburgerButton.classList.remove('open');
+                        hamburgerButton.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        });
+
+        // Gérer le clic sur le bouton hamburger
+        hamburgerButton.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+            hamburgerButton.classList.toggle('open');
+            const isExpanded = navMenu.classList.contains('hidden') ? 'false' : 'true';
+            hamburgerButton.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Gérer le redimensionnement de la fenêtre pour afficher/masquer le menu hamburger
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) { // Si la taille de l'écran est md ou plus grande
+                navMenu.classList.remove('hidden'); // Assurez-vous que le menu est visible
+                hamburgerButton.classList.remove('open'); // Réinitialisez l'icône hamburger
+                hamburgerButton.setAttribute('aria-expanded', 'true');
+            } else {
+                // Sur les écrans plus petits, assurez-vous que le menu est masqué si le bouton n'est pas ouvert
+                if (!hamburgerButton.classList.contains('open')) {
+                    navMenu.classList.add('hidden');
+                    hamburgerButton.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        // Initialiser l'état du menu au chargement de la page
+        window.addEventListener('load', () => {
+            if (window.innerWidth >= 768) {
+                navMenu.classList.remove('hidden');
+                hamburgerButton.setAttribute('aria-expanded', 'true');
+            } else {
+                navMenu.classList.add('hidden');
+                hamburgerButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>-->
 </body>
-    
 </html>
