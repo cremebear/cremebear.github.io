@@ -53,12 +53,23 @@
     </section>
 
     <!-- Section 2 -->
+   <!-- Section 2 -->
     <section id="section2" class="scroll-offset">
-        <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+        <div class="max-w-4xl mx-auto p-6 flex flex-col items-center">
             <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">CONTENT</h2>
-            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Dive deeper into the details in this second section. We've ensured that all content adapts beautifully to any screen size.
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
+                전통시장 홍보대사, 빵집 알바생, 관광 안내원 등으로 열일하는 크렘베어의 활약을 보시겠어요?
             </p>
+
+            <!-- Curseur d'images -->
+            <div class="slider-container">
+                <div class="slider-wrapper" id="imageSlider">
+                    <img src="https://placehold.co/600x400/FF5733/FFFFFF?text=Image+1" alt="Image 1 du curseur" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Non+Trouvée';">
+                    <img src="https://placehold.co/600x400/33FF57/FFFFFF?text=Image+2" alt="Image 2 du curseur" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Non+Trouvée';">
+                    <img src="https://placehold.co/600x400/3357FF/FFFFFF?text=Image+3" alt="Image 3 du curseur" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Non+Trouvée';">
+                    <img src="https://placehold.co/600x400/FFFF33/000000?text=Image+4" alt="Image 4 du curseur" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Non+Trouvée';">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -138,6 +149,22 @@
             const isExpanded = navMenu.classList.contains('hidden') ? 'false' : 'true';
             hamburgerButton.setAttribute('aria-expanded', isExpanded);
         });
+
+ // Logique du curseur d'images
+        const slider = document.getElementById('imageSlider');
+        const images = slider.querySelectorAll('img');
+        let currentImageIndex = 0;
+        const slideInterval = 3000; // 3 secondes
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            const offset = -currentImageIndex * 100; // Déplace de 100% pour chaque image
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Démarrer le défilement automatique
+        setInterval(showNextImage, slideInterval);
+
     </script>
 
     <!--<script>

@@ -37,16 +37,16 @@ section {
             padding: 0;
             background: none;
             border: none;
-        }
+}
 
-        .hamburger-icon span {
-            display: block;
+.hamburger-icon span {
+         display: block;
             width: 100%;
             height: 3px;
             background-color: #fffbbe; /* Couleur bleue */
             border-radius: 2px;
             transition: all 0.3s ease-in-out;
-        }
+}
 
         /* Animation du hamburger en croix */
         .hamburger-icon.open span:nth-child(1) {
@@ -57,6 +57,28 @@ section {
         }
         .hamburger-icon.open span:nth-child(3) {
             transform: rotate(-45deg) translate(10px, -6px);
+        }
+
+/* Styles spécifiques au curseur d'images */
+.slider-container {
+            width: 100%;
+            max-width: 600px; /* Largeur maximale du curseur */
+            overflow: hidden;
+            border-radius: 1rem; /* Bords arrondis */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Ombre */
+            margin-top: 2rem; /* Marge au-dessus du curseur */
+}
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.8s ease-in-out; /* Transition douce pour le défilement */
+        }
+
+        .slider-wrapper img {
+            width: 100%;
+            flex-shrink: 0; /* Empêche les images de rétrécir */
+            height: auto;
+            object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
         }
 
 #navMenu {
@@ -103,7 +125,7 @@ section {
 
 
 #section2 { 
-    background-color: #bbffd0; 
+    background-color: #aedafd; 
     align-items:center;
     /*background-image: url('./content.jpg');*/ /* Remplacez par l'URL de votre image */
     background-size: cover; /* L'image couvrira toute la section */
