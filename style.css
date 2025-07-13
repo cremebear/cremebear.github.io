@@ -10,13 +10,16 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0rem; /* Add padding for content */
-    margin: 0rem;
+     /* Add padding for content */
+    padding: 2rem;
+    
+
 }
 /* Adjust for fixed header */
 .scroll-offset {
     scroll-margin-top: 4rem; /* Height of the fixed header */
 }
+
 #img-div {
     padding: 1rem;
     display: flex;
@@ -28,8 +31,8 @@ section {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            width: 30px;
-            height: 25px;
+            width: 40px;
+            height: 35px;
             cursor: pointer;
             padding: 0;
             background: none;
@@ -40,45 +43,51 @@ section {
             display: block;
             width: 100%;
             height: 3px;
-            background-color: #3b82f6; /* Couleur bleue */
+            background-color: #fffbbe; /* Couleur bleue */
             border-radius: 2px;
             transition: all 0.3s ease-in-out;
         }
 
         /* Animation du hamburger en croix */
         .hamburger-icon.open span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(10px, 5px);
         }
         .hamburger-icon.open span:nth-child(2) {
             opacity: 0;
         }
         .hamburger-icon.open span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(10px, -6px);
         }
 
-
+#navMenu {
+    width: 30vh;
+   /*  height: 50vh; */
+}
 /* Specific background colors for sections */
 /* Section 1 - With background image */
 #section1 {
     align-items: end;
-    background-color: rgb(253, 255, 186);
+    background-color: rgb(254, 255, 212);
     background-image: url('/img/01bg.jpg'); /* Remplacez par l'URL de votre image */
     background-size: cover; /* L'image couvrira toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     /* text-shadow et color ont été retirés car il n'y a plus de texte directement dans la section */
+    padding-bottom: 0rem;
+
 }
+
 
 /* La règle pour #section1 .max-w-4xl a été retirée car la div est supprimée */
 
 /* Define the slide-up animation */
 @keyframes slideUp {
     from {
-        transform: translateY(100%); /* Commence à 100% en dessous de sa position normale */
+        transform: translateY(50%); /* Commence à 100% en dessous de sa position normale */
         opacity: 0; /* Commence invisible */
     }
     to {
-        transform: translateY(3%); /* Termine à sa position normale */
+        transform: translateY(0%); /* Termine à sa position normale */
         opacity: 1; /* Termine entièrement visible */
     }
 }
@@ -93,7 +102,18 @@ section {
 }
 
 
-#section2 { background-color: #f0fdf4; } /* Emerald green light */
-#section3 { background-color: #fffbeb; } /* Amber yellow light */
-#section4 { background-color: #fef2f2; } /* Red light */
-#section5 { background-color: #eff6ff; } /* Blue light */
+#section2 { 
+    background-color: #bbffd0; 
+    align-items:center;
+    /*background-image: url('./content.jpg');*/ /* Remplacez par l'URL de votre image */
+    background-size: cover; /* L'image couvrira toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    /* text-shadow et color ont été retirés car il n'y a plus de texte directement dans la section */
+} /* Emerald green light */
+
+#section3 { background-color: #b6c0ff; } /* Amber yellow light */
+#section4 { background-color: #bfeeff; } /* Red light */
+#section5 {
+     background-color: #ffffff; 
+} /* Blue light */
