@@ -17,7 +17,7 @@ section {
 }
 /* Adjust for fixed header */
 .scroll-offset {
-    scroll-margin-top: 4rem; /* Height of the fixed header */
+    /*scroll-margin-top: 4rem;*/ /* Height of the fixed header */
 }
 
 #img-div {
@@ -67,8 +67,8 @@ section {
 /* Section 1 - With background image */
 #section1 {
     align-items: end;
-    background-color: rgb(254, 255, 212);
-    background-image: url('/img/01bg.jpg'); /* Remplacez par l'URL de votre image */
+    background-color: rgb(255, 238, 152);
+   /* background-image: url('/img/01bg.jpg');*/ /* Remplacez par l'URL de votre image */
     background-size: cover; /* L'image couvrira toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
