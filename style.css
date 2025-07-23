@@ -23,6 +23,10 @@ section {
     /*scroll-margin-top: 4rem;*/ /* Height of the fixed header */
 }
 
+.img-profile {
+      border-radius: 50%;
+}
+
 #img-div {
     padding: 1rem;
     display: flex;
