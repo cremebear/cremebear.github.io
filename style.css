@@ -1,7 +1,8 @@
 /* Custom scroll-behavior for smooth scrolling */
-html {
+html, body {
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif; /* Using Inter font */
+    overflow-x: hidden;
 }
 /* Ensure sections take full viewport height */
 section {
