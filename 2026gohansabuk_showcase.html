@@ -113,15 +113,16 @@
           
           <!-- 학년 뱃지 -->
           <div class="inline-block bg-amber-100 border border-dashed border-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-craft font-bold mb-3 shadow-2xs">
-            🌱 돌봄교실 1~4학년 그림책 &amp; 연극제
+            🌱 다함께돌봄센터 그림책 &amp; 연극제
           </div>
 
           <!-- 표지 대표 일러스트 카드 (원하는 표지 이미지로 교체 가능) -->
           <div class="relative w-64 h-64 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-amber-50 mb-4 transform -rotate-1">
             <div class="masking-tape"></div>
             
+            <img src="./dolbom/illustration/hwaam00.jpg" class="w-full h-full object-cover">
             <!-- ※ 실제 사진을 쓰실 때는 아래 <svg> 대신 <img src="cover.jpg" class="w-full h-full object-cover"> 넣으시면 됩니다 -->
-            <svg class="w-full h-full" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg class="w-full h-full" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="240" height="240" fill="#FDF3E3"/>
               <ellipse cx="120" cy="135" rx="55" ry="62" fill="#B45309"/>
               <path d="M60 110C60 82 82 66 120 66C158 66 180 82 180 110H60Z" fill="#78350F"/>
@@ -132,20 +133,20 @@
               <path d="M112 148C116 156 124 156 128 148" stroke="#1C1917" stroke-width="3" stroke-linecap="round"/>
               <circle cx="152" cy="160" r="20" stroke="#4B5563" stroke-width="5" fill="#E0F2FE" fill-opacity="0.4"/>
               <line x1="168" y1="175" x2="188" y2="195" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
-            </svg>
+            </svg> -->
           </div>
 
           <!-- 그림책 제목 -->
           <h1 class="text-3xl font-bold text-stone-900 font-craft tracking-tight leading-tight mb-2">
-            달콤 숲의 도토리 탐정단
+            화암동굴의 보랏빛 심장
           </h1>
           <p class="text-xs text-stone-600 max-w-[260px] leading-relaxed">
-            "사라진 도토리를 찾아 떠나는 모험!"<br>
+            블라블라<br>
             아이들이 함께 그린 그림과 무대 사진을 모았습니다.
           </p>
 
           <p class="mt-3 text-[11px] text-amber-800 font-craft bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
-            💡 화면 오른쪽 위 [연극 무대 보기]를 누르면 사진으로 바뀝니다!
+            💡 화면 위 [연극 무대 보기]를 누르면 사진으로 바뀝니다!
           </p>
         </div>
 
@@ -164,10 +165,10 @@
           <!-- 장 제목 및 참가 어린이 -->
           <div class="flex justify-between items-center px-1">
             <span class="bg-amber-100 text-amber-900 text-xs px-2.5 py-1 rounded-full border border-amber-300 font-bold font-craft">
-              제 1 장 : 도토리가 사라졌다!
+              제 1 장 : 
             </span>
             <span class="text-[11px] text-stone-500 bg-white/80 px-2 py-0.5 rounded border border-stone-200">
-              🎨 그림: 1학년 민우 / 🎭 탐정역: 2학년 로운
+              🎨 뫄뫄뫄뫄
             </span>
           </div>
 
@@ -177,16 +178,11 @@
 
             <!-- 1) 그림책 일러스트 뷰 (기본) -->
             <div class="view-book absolute inset-0 w-full h-full flex items-center justify-center bg-[#faf4e8] transition-opacity duration-300">
-              <!-- 그림 대체: <img src="book_page1.jpg" class="w-full h-full object-cover"> -->
-              <svg viewBox="0 0 400 300" class="w-full h-full">
-                <rect width="400" height="300" fill="#E8F4F8"/>
-                <path d="M-20 220 Q120 160 260 230 Q340 180 420 240 L420 300 L-20 300 Z" fill="#A3D9A5"/>
-                <!-- 나무 구멍 -->
-                <path d="M120 300 L140 120 Q180 90 220 120 L240 300 Z" fill="#92400E"/>
-                <ellipse cx="180" cy="180" rx="25" ry="32" fill="#451A03"/>
+              <img src="./dolbom/illustration/hwaam01.jpg" class="w-full h-full object-cover">
+              <!-- <svg viewBox="0 0 400 300" class="w-full h-full">
                 <text x="172" y="190" font-family="'Gaegu', cursive" font-size="34" fill="#FBBF24" font-weight="bold">?</text>
-                <!-- 우는 다람쥐 캐릭터 (터치 시 말풍선) -->
-                <g class="cursor-pointer" onclick="showPopup('다람이 (1학년 민우)', '내 도토리가 감쪽같이 사라졌어 ㅠㅠ!')">
+
+                <g class="cursor-pointer" onclick="showPopup('으아아아아앙ㅠㅠ!')">
                   <ellipse cx="280" cy="220" rx="28" ry="35" fill="#D97706"/>
                   <circle cx="280" cy="170" r="22" fill="#B45309"/>
                   <polygon points="268,155 260,135 275,145" fill="#92400E"/>
@@ -195,25 +191,25 @@
                   <circle cx="288" cy="168" r="3" fill="#1C1917"/>
                   <path d="M265 175 L260 190 M295 175 L300 190" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
                 </g>
-              </svg>
+              </svg> -->
               <!-- 탭 힌트 뱃지 -->
-              <button onclick="showPopup('다람이', '내 소중한 도토리가 어디 갔지?')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
-                💬 다람이 터치하기
+              <button onclick="showPopup('호랑이', '어? 무슨 소리지?')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
+                💬 어? 무슨 소리지?
               </button>
             </div>
 
             <!-- 2) 연극 무대 사진 뷰 (토글 시 표시) -->
             <div class="view-stage absolute inset-0 w-full h-full opacity-0 pointer-events-none transition-opacity duration-300 bg-stone-900 flex flex-col justify-end p-3 text-white">
-              <!-- 실제 무대 사진 대체: <img src="stage1.jpg" class="absolute inset-0 w-full h-full object-cover"> -->
-              <div class="absolute inset-0 bg-cover bg-center flex items-center justify-center bg-stone-800">
+              <img src="./dolbom/illustration/hwaamplay01.jpg" class="absolute inset-0 w-full h-full object-cover">
+              <!-- <div class="absolute inset-0 bg-cover bg-center flex items-center justify-center bg-stone-800">
                 <span class="text-4xl">🎭 📸</span>
-              </div>
-              <div class="relative z-10 bg-black/70 backdrop-blur-xs p-2.5 rounded-xl border border-white/20">
+              </div> -->
+              <!-- <div class="relative z-10 bg-black/70 backdrop-blur-xs p-2.5 rounded-xl border border-white/20">
                 <span class="bg-red-600 text-[9px] font-bold px-1.5 py-0.5 rounded text-white">연극 무대 1막</span>
                 <p class="text-xs text-stone-200 font-craft mt-1">
-                  "직접 박스로 만든 대형 돋보기를 들고 첫 대사를 외치던 로운이의 모습!"
+                  "뫄뫄뫄."
                 </p>
-              </div>
+              </div> -->
             </div>
 
           </div>
@@ -222,11 +218,13 @@
           <div class="bg-white/95 p-3.5 rounded-2xl shadow-sm border border-stone-200 mt-2">
             <div class="flex items-start justify-between gap-2">
               <p class="text-xs text-stone-800 leading-relaxed">
-                <strong class="text-amber-800 font-bold">"어라? 도토리가 모두 사라졌잖아!"</strong><br>
-                눈물을 흘리는 다람이 앞에, 숲속 최고의 꾀돌이 도토리 탐정단이 나타났어요.
+                <!-- <strong class="text-amber-800 font-bold">""</strong><br> -->
+                "옛날 옛적, 호랑이가 담배 피우던 시절에 화암동굴에는 박쥐 가족이 살고 있었어요. 첫째는 사랑이, 둘째는 행복이, 셋째는 기쁨이었어요.
+                  <br> 산에서 혼자 살던 호랑이는 어느 날 화암동굴을 발견했어요. 호랑이는 동굴 안이 궁금해 들어가 보았어요. 그곳에서 박쥐 가족을 만났어요.
+                  <br> 박쥐 가족은 호랑이를 반갑게 맞아 주었어요. 혼자 지대던 호랑이는 무척 기뻤어요."
               </p>
               <!-- 목소리 듣기 버튼 (브라우저 내장 음성으로 바로 동작) -->
-              <button onclick="speakText('어라? 도토리가 모두 사라졌잖아! 내가 찾아낼게!')" title="아이 목소리 듣기" class="flex-shrink-0 bg-amber-500 hover:bg-amber-600 text-white p-2 rounded-xl shadow active:scale-95 transition">
+              <button onclick="speakText('옛날 옛적, 호랑이가 담배 피우던 시절에.')" title="목소리 듣기" class="flex-shrink-0 bg-amber-500 hover:bg-amber-600 text-white p-2 rounded-xl shadow active:scale-95 transition">
                 <i data-lucide="volume-2" class="w-4 h-4"></i>
               </button>
             </div>
@@ -247,10 +245,10 @@
           
           <div class="flex justify-between items-center px-1">
             <span class="bg-emerald-100 text-emerald-900 text-xs px-2.5 py-1 rounded-full border border-emerald-300 font-bold font-craft">
-              제 2 장 : 토끼와 곰의 알리바이
+              제 2 장 : 
             </span>
             <span class="text-[11px] text-stone-500 bg-white/80 px-2 py-0.5 rounded border border-stone-200">
-              🎨 그림: 2학년 서아 / 🎭 토끼: 하린 &amp; 곰: 준호
+              🎨 뫄뫄뫄뫄 🎭 뫄뫄뫄뫄 &amp; 뫄뫄
             </span>
           </div>
 
@@ -263,7 +261,7 @@
                 <rect width="400" height="300" fill="#E2F1E7"/>
                 <path d="M-10 180 Q200 130 410 190 L410 300 L-10 300 Z" fill="#86EFAC"/>
                 <!-- 아기곰 (터치 인터랙션) -->
-                <g class="cursor-pointer" onclick="showPopup('아기곰 (3학년 준호)', '나는 딸기잼 만들고 있었어! 도토리는 떫어서 안 먹어!')">
+                <g class="cursor-pointer" onclick="showPopup('뫄뫄뫄뫄 (뫄뫄뫄뫄)', '뫄뫄뫄뫄!')">
                   <ellipse cx="120" cy="210" rx="55" ry="70" fill="#78350F"/>
                   <circle cx="90" cy="135" r="15" fill="#78350F"/>
                   <circle cx="150" cy="135" r="15" fill="#78350F"/>
@@ -274,7 +272,7 @@
                   <rect x="75" y="240" width="28" height="35" rx="6" fill="#EF4444"/>
                 </g>
                 <!-- 깡충 토끼 (터치 인터랙션) -->
-                <g class="cursor-pointer" onclick="showPopup('토끼 (1학년 하린)', '시냇물 쪽에서 반짝이는 발자국을 봤어! 깡충!')">
+                <g class="cursor-pointer" onclick="showPopup('뫄뫄', '뫄뫄뫄뫄')">
                   <ellipse cx="270" cy="225" rx="32" ry="45" fill="#FFFFFF"/>
                   <ellipse cx="255" cy="125" rx="9" ry="32" fill="#FFFFFF"/>
                   <ellipse cx="285" cy="125" rx="9" ry="32" fill="#FFFFFF"/>
@@ -282,7 +280,7 @@
                   <circle cx="280" cy="190" r="4" fill="#1C1917"/>
                 </g>
               </svg>
-              <button onclick="showPopup('동물 친구들', '곰과 토끼를 콕 터치해 보세요!')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
+              <button onclick="showPopup('뫄뫄', '뫄뫄뫄뫄!')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
                 💬 동물들 터치하기
               </button>
             </div>
@@ -295,7 +293,7 @@
               <div class="relative z-10 bg-black/70 backdrop-blur-xs p-2.5 rounded-xl border border-white/20">
                 <span class="bg-emerald-600 text-[9px] font-bold px-1.5 py-0.5 rounded text-white">연극 무대 2막</span>
                 <p class="text-xs text-stone-200 font-craft mt-1">
-                  "토끼 귀 머리띠와 곰 발바닥 장갑을 끼고 열연을 펼친 아이들!"
+                  "뫄뫄뫄뫄뫄뫄뫄뫄뫄뫄뫄뫄"
                 </p>
               </div>
             </div>
@@ -305,10 +303,10 @@
           <div class="bg-white/95 p-3.5 rounded-2xl shadow-sm border border-stone-200 mt-2">
             <div class="flex items-start justify-between gap-2">
               <p class="text-xs text-stone-800 leading-relaxed">
-                <strong class="text-emerald-800 font-bold">"우린 아니야! 달콤한 잼을 끓였는걸?"</strong><br>
-                곰 아저씨는 잼을 자랑했고, 토끼는 언덕 너머로 비밀스러운 발자국이 이어졌다고 알려주었어요.
+                <strong class="text-emerald-800 font-bold">"뫄뫄뫄뫄?"</strong><br>
+                뫄뫄뫄뫄.
               </p>
-              <button onclick="speakText('우린 아니야! 나는 딸기잼을 만들고 있었는걸? 깡충!')" title="아이 목소리 듣기" class="flex-shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-xl shadow active:scale-95 transition">
+              <button onclick="speakText('뫄뫄뫄뫄!')" title="목소리 듣기" class="flex-shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-xl shadow active:scale-95 transition">
                 <i data-lucide="volume-2" class="w-4 h-4"></i>
               </button>
             </div>
@@ -329,10 +327,10 @@
           
           <div class="flex justify-between items-center px-1">
             <span class="bg-indigo-100 text-indigo-900 text-xs px-2.5 py-1 rounded-full border border-indigo-300 font-bold font-craft">
-              제 3 장 : 달빛 아래 깜짝 파티!
+              제 3 장 : 
             </span>
             <span class="text-[11px] text-stone-500 bg-white/80 px-2 py-0.5 rounded border border-stone-200">
-              🎨 그림: 3학년 도윤 / 🎭 합창: 전원 출연
+              🎨 뫄뫄뫄뫄 / 🎭 
             </span>
           </div>
 
@@ -344,15 +342,15 @@
               <svg viewBox="0 0 400 300" class="w-full h-full">
                 <rect width="400" height="300" fill="#1E1B4B"/>
                 <circle cx="340" cy="80" r="28" fill="#FDE047"/>
-                <!-- 파티 케이크 (터치 인터랙션) -->
-                <g class="cursor-pointer" onclick="showPopup('깜짝 파티단', '다람아 생일 축하해! 도토리로 케이크를 만들었어!')">
+                <!--  (터치 인터랙션) -->
+                <g class="cursor-pointer" onclick="showPopup('뫄뫄뫄뫄', '뫄뫄뫄뫄!')">
                   <path d="M140 230 L140 185 Q200 165 260 185 L260 230 Q200 250 140 230 Z" fill="#F59E0B"/>
                   <line x1="200" y1="180" x2="200" y2="155" stroke="#EF4444" stroke-width="4"/>
                   <ellipse cx="200" cy="150" rx="4" ry="7" fill="#FDE047"/>
                 </g>
                 <text x="140" y="270" font-family="'Gaegu', cursive" font-size="20" fill="#FEF08A" font-weight="bold">생일 축하해 다람아! 🎉</text>
               </svg>
-              <button onclick="showPopup('케이크', '다람이의 깜짝 생일 케이크예요!')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
+              <button onclick="showPopup('뫄뫄뫄뫄', '뫄뫄뫄뫄!')" class="absolute bottom-2.5 right-2.5 bg-white/95 px-2.5 py-1 rounded-full text-[10px] font-craft text-stone-700 shadow border border-stone-200">
                 🎂 케이크 터치하기
               </button>
             </div>
@@ -365,7 +363,7 @@
               <div class="relative z-10 bg-black/70 backdrop-blur-xs p-2.5 rounded-xl border border-white/20">
                 <span class="bg-indigo-600 text-[9px] font-bold px-1.5 py-0.5 rounded text-white">연극 피날레</span>
                 <p class="text-xs text-stone-200 font-craft mt-1">
-                  "다 함께 생일 축하 노래를 부르며 춤을 추던 마지막 장면입니다!"
+                  "뫄뫄뫄뫄!"
                 </p>
               </div>
             </div>
@@ -375,10 +373,10 @@
           <div class="bg-white/95 p-3.5 rounded-2xl shadow-sm border border-stone-200 mt-2">
             <div class="flex items-start justify-between gap-2">
               <p class="text-xs text-stone-800 leading-relaxed">
-                <strong class="text-indigo-800 font-bold">"생일 축하해 다람아! 서프라이즈~!"</strong><br>
-                도토리는 훔쳐간 게 아니었어요. 친구들이 다람이 몰래 커다란 도토리 케이크를 만들고 있었답니다!
+                <strong class="text-indigo-800 font-bold">"뫄뫄뫄뫄!"</strong><br>
+                뫄뫄뫄뫄
               </p>
-              <button onclick="speakText('생일 축하해 다람아! 서프라이즈 파티야! 와아~!')" title="아이 목소리 듣기" class="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-xl shadow active:scale-95 transition">
+              <button onclick="speakText('생일 축하해 기질라~!')" title="목소리 듣기" class="flex-shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-xl shadow active:scale-95 transition">
                 <i data-lucide="volume-2" class="w-4 h-4"></i>
               </button>
             </div>
@@ -400,7 +398,7 @@
           <!-- 축하 헤더 -->
           <div class="text-center mb-4">
             <span class="bg-amber-100 border border-amber-300 text-amber-900 text-xs px-3 py-1 rounded-full font-craft font-bold">
-              🎉 2026 돌봄교실 연극 &amp; 그림책 축제
+              🎉 2026  연극 &amp; 그림책
             </span>
             <h2 class="text-2xl font-bold text-stone-900 font-craft mt-2">
               우리의 첫 무대가 끝났습니다!
@@ -423,25 +421,25 @@
               <div class="text-center p-4">
                 <span class="text-3xl">📸</span>
                 <p class="text-xs text-stone-500 font-craft mt-1">
-                  [이곳에 아이들 단체 기념사진을 넣으실 수 있어요]<br>
+                  [사진]<br>
                   &lt;img src="group.jpg"&gt;
                 </p>
               </div>
             </div>
             <p class="text-[11px] text-center text-stone-500 mt-2 font-craft">
-              "두 달 동안 연습하느라 정말 수고 많았어, 얘들아 사랑해! ❤️"
+              "뫄뫄뫄뫄 말 넣기 ❤️"
             </p>
           </div>
 
-          <!-- 만든이 크레딧 카드 (1-4학년 배역 & 그림) -->
+          <!-- 만든이 크레딧 카드 (배역 & 그림) -->
           <div class="w-full bg-amber-50/80 p-3.5 rounded-2xl border border-amber-200 text-xs mb-4">
             <h3 class="font-bold text-amber-900 font-craft text-sm mb-2 flex items-center space-x-1">
-              <span>🌟</span><span>함께 만든 우리 아이들</span>
+              <span>🌟</span><span>함께 만들었어요.</span>
             </h3>
             <div class="space-y-1.5 text-stone-700 text-[11px]">
-              <div><strong>🎭 연극 배우:</strong> 이로운(탐정), 김민우(다람이), 박준호(곰), 최하린(토끼), 이하은(코러스)</div>
-              <div><strong>🎨 그림 작가:</strong> 김민우(1장), 정서아(2장), 송도윤(3장)</div>
-              <div><strong>🪄 지도 교사:</strong> 초등돌봄전담사 &amp; 방과후 연극 예술강사</div>
+              <div><strong>🎭 연극 :</strong> 뫄뫄(기질라), 뫄뫄(어린 기질라), 등등</div>
+              <div><strong>🎨 그림 :</strong> 뫄뫄뫄, 뫄뫄뫄, 뫄뫄뫄</div>
+              <div><strong>🪄 지도교사:</strong> 사북 &amp; 고한</div>
             </div>
           </div>
 
@@ -452,7 +450,7 @@
             </button>
             <button onclick="shareBook()" class="flex-1 py-2.5 bg-amber-100 hover:bg-amber-200 text-amber-900 rounded-xl text-xs font-craft font-bold border border-amber-300 flex items-center justify-center space-x-1">
               <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
-              <span>가족 공유 링크 복사</span>
+              <span>공유 링크 복사하기</span>
             </button>
           </div>
 
@@ -533,7 +531,7 @@
         label.textContent = '연극 무대 보기';
         allBooks.forEach(el => { el.style.opacity = '1'; el.style.pointerEvents = 'auto'; });
         allStages.forEach(el => { el.style.opacity = '0'; el.style.pointerEvents = 'none'; });
-        showToast('🎨 아이들이 그린 그림책 모드로 변경되었어요!');
+        showToast('🎨 그림책 모드로 변경되었어요!');
       }
     }
 
